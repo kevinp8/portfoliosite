@@ -75,6 +75,7 @@ nav {
     display: flex;
     justify-content: center;
     transition: background .2s;
+    z-index: 999;
 }
 
 .about {

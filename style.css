@@ -20,14 +20,14 @@ main {
     margin: 2vw 0;
 }
 main section {
-    width: 35%;
+    width: 32.5%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2vw;
 }
 h2 {
-    font-size: 3vw;
+    font-size: 2.9vw;
     font-weight: 200;
     color: white;
     margin-left: 3vw;
@@ -35,7 +35,7 @@ h2 {
     border-left: 8px solid white;
 }
 h1 {
-    font-size: 4.5vw;
+    font-size: 4.4vw;
     color: black;
     margin-left: 3vw;
     font-family: 'Permanent Marker', cursive;
@@ -44,11 +44,12 @@ h1 {
 nav ul {
     display: flex;
     justify-content: space-around;
+    align-items: center;
     width: 75%;
     padding: 1vw;
     background-color: rgba(255, 255, 255, 0.6);
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
     border-radius: 40px;
     box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
 }
@@ -74,8 +75,7 @@ nav {
     width: 35%;
     display: flex;
     justify-content: center;
-    transition: background .2s;
-    z-index: 999;
+    align-items: center;
 }
 
 .about {
@@ -83,7 +83,7 @@ nav {
     color: black;
 }
 .about section {
-    width: 70%;
+    width: 65%;
     margin: auto;
 }
 h3 {
@@ -91,7 +91,7 @@ h3 {
     padding: 5vw 0 3vw 0;
     color: #5dffd5;
 }
- p {
+p {
     font-size: 1.5vw;
     padding-bottom: 5vw;
     font-weight: 200;
@@ -102,10 +102,10 @@ h3 {
     background-color: black;
 }
 .skills h3 {
-    margin-left: 15%;
+    margin-left: 17.5%;
 }
 .skills ul {
-    width: 70%;
+    width: 65%;
     display: flex;
     margin: auto;
     text-align: center;
@@ -126,11 +126,11 @@ h3 {
     font-weight: 200;
 }
 .projects h3 {
-    margin-left: 15%;
+    margin-left: 17.5%;
     text-align: left;
 }
 .projects ul {
-    width: 70%;
+    width: 65%;
     display: flex;
     margin: auto;
     justify-content: center;
@@ -163,7 +163,7 @@ h3 {
     font-size: 1.5vw;
     background-color: #5dffd5;
     padding: 1vw;
-    border-radius: 10px;
+    border-radius: 40px;
     color: white;
     font-weight: 300;
     margin: 2vw 0 5vw 0;
@@ -173,14 +173,15 @@ footer {
     color: white;
 }
 footer h3, footer p {
-    margin-left: 15%;
+    margin-left: 17.5%;
+    width: 65%;
 }
 footer p {
     color: white;
 }
 footer>ul {
     display: flex;
-    width: 70%;
+    width: 65%;
     margin:auto;
     justify-content: space-around;
 }
@@ -203,4 +204,118 @@ footer ul ul {
 }
 footer ul ul li {
     width: 33%;
+}
+
+@media all and (max-width: 650px) {
+    nav ul {
+        width: 100%;
+        padding: 6vw;
+        border-radius: 0;
+        margin-right: 0;
+    }
+    nav a {
+        font-size: 5vw;
+    }
+    nav {
+        width: 100%;
+        top: 0;
+        left: 0;
+    }
+    main {
+        margin-top: 17vw;
+        flex-direction: column;
+        align-items: center;
+    }
+    main section {
+        width: 90%;
+        align-items: center;
+    }
+    main section:last-of-type{
+        align-items: flex-start;
+        padding-bottom: 10vw;
+    }
+    h1 {
+        font-size: 13vw;
+        margin: 5vw 0;
+    }
+    h2 {
+        font-size: 8vw;
+        border-left: 1vw solid white;
+    }
+    h3 {
+        font-size: 12vw;
+        margin: 5vw 0;;
+    }
+    p {
+        font-size: 5vw;
+    }
+
+    .about section {
+        width: 90%;
+        margin: auto;
+    }
+    .skills h3 {
+        margin-left: 5%;
+    }
+    .skills ul {
+        width: 90%;
+        flex-wrap: wrap;
+        padding-bottom: 5vw;
+    }
+    .skills li {
+        width: 40%;
+    }
+    .skills span {
+        font-size: 5vw;
+    }
+    .projects h3 {
+        margin-left: 5%;
+    }
+    .projects ul {
+        width: 80%;
+        flex-wrap: wrap;
+    }
+    .projects li {
+        width: 100%;
+    }
+    .projects li a:last-of-type {
+        display: inline-block;
+        margin: 2vw 0;
+        font-size: 7vw;
+        color: black;
+        text-decoration: none;
+        font-weight: 200;
+        padding: 5vw 0 10vw 0;
+    }
+    .projects>a {
+        font-size: 7vw;
+        padding: 5vw;
+        margin: 3vw 0 10vw 0;
+    }
+    
+    footer h3, footer p {
+        margin-left: 5%;
+    }
+    footer>ul {
+        width: 90%;
+        margin:auto;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    footer>ul>li {
+        width: 100%;
+    }
+    footer a {
+        font-size: 5vw;
+    }
+    footer img {
+        width: 35%;
+    }
+    footer ul ul li {
+        width: 33.3333%;
+    }
+    footer>ul>li>a {
+        display: inline-block;
+        padding: 3vw 0;
+    }
 }

@@ -1,0 +1,245 @@
+* {
+    box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+html {
+    font-family: 'Poppins', sans-serif;
+}
+a {
+    text-decoration: none;
+    color: black;
+}
+header {
+    background-color: #5dffd5;
+    height: 7vw;
+}
+nav {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+}
+nav ul {
+    width: 30%;
+    display: flex;
+    padding: 0 1vw;
+    background-color: rgba(255, 255, 255, 0.6);
+    backdrop-filter: blur(4px);
+    -webkit-backdrop-filter: blur(4px);
+    border-radius: 40px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    justify-content: space-around;
+    font-size: 1vw;
+    position: fixed;
+    top: 3.5vw;
+    right: 17.5%;
+    z-index: 999;
+}
+nav ul a {
+    display: inline-block;
+    padding: 1vw;
+}
+h1 {
+    font-size: 6vw;
+    margin-top: 1vw;
+    text-decoration: underline;
+}
+a, main img, h2 {
+    transition: all .2s ease-in-out;
+}
+a:hover, h2:hover {
+    transform: scale(1.1);
+    color: #5dffd5;
+}
+main img:hover {
+    transform: scale(1.05);
+}
+
+/*-----------------------------------------------------------*/
+
+main {
+    width: 65%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2vw 0;
+}
+main section {
+    width: 30.1%;
+    margin: 1vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 20px;
+    text-align: center;
+}
+main img {
+    width: 90%;
+    border: 1px solid lightgray;
+    border-radius: 20px;
+}
+h2 {
+    font-size: 1.5vw;
+    padding: 1.5vw 0;
+}
+span {
+    display: inline-block;
+    padding: 1vw 0;
+    font-size: 1vw;
+}
+
+/*-----------------------------------------------------------*/
+
+footer {
+    background-color: black;
+    color: white;
+}
+footer h3, footer p {
+    margin-left: 17.5%;
+    width: 65%;
+}
+h3 {
+    font-size: 5vw;
+    color: #5dffd5;
+    padding: 4vw 0;
+}
+footer p {
+    font-size: 1.5vw;
+    margin-bottom: 2vw;
+    font-weight: 200;
+}
+footer>ul {
+    display: flex;
+    width: 65%;
+    margin:auto;
+    justify-content: space-around;
+}
+footer>ul li {
+    width: 20%;
+}
+footer a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    font-size: 1.5vw;
+    margin-bottom: 5vw;
+}
+footer img {
+    width: 50%;
+}
+footer ul ul {
+    display: flex;
+    justify-content: flex-end;
+}
+footer ul ul li {
+    width: 33%;
+}
+
+/*-----------------------------------------------------------*/
+
+@media screen and (max-width: 540px) {
+    header {
+        height: 45vw;
+    }
+    nav {
+        width: 90%;
+    }
+    nav ul {
+        width: 100%;
+        padding: 6vw;
+        border-radius: 0;
+        left: 0;
+        top: 0;
+        font-size: 5vw;
+    }
+    h1 {
+        font-size: 20vw;
+        margin-top: 25vw;
+    }
+    main {
+        width: 90%;
+        padding: 10vw 0;
+    }
+    main section {
+        width: 47.7%;
+        border-radius: 5px;
+    }
+    h2 {
+        font-size: 5vw;
+        padding: 3vw 0;
+    }
+    span {
+        font-size: 3.5vw;
+        padding: 3vw 0;
+    }
+    footer h3, footer p {
+        margin-left: 5%;
+        width: 90%;
+    }
+    footer>ul {
+        width: 90%;
+        margin:auto;
+        flex-wrap: wrap;
+        text-align: center;
+    }
+    footer>ul>li {
+        width: 100%;
+    }
+    footer a {
+        font-size: 5vw;
+    }
+    footer img {
+        width: 35%;
+    }
+    footer ul ul li {
+        width: 33.3333%;
+    }
+    footer>ul>li>a {
+        display: inline-block;
+        padding: 3vw 0;
+    }
+    h3 {
+        font-size: 10vw;
+    }
+    footer p {
+        font-size: 5vw;
+    }
+}
+@media (min-width: 541px) and (max-width: 1180px) {
+    
+    header {
+        height: 15vw;
+    }
+    h1 {
+        margin-top: 7vw;
+        font-size: 8vw;
+    }
+    nav ul {
+        width: 35%;
+    }
+    nav li {
+        padding: 1.5vw;
+        font-size: 1.5vw;
+    }
+    nav {
+        width: 80%;
+    }
+    main {
+        width: 80%;
+    }
+    footer h3, footer p {
+        width: 80%;
+        margin-left: 10%;
+    }
+    main {
+        padding: 5vw 0;
+    }
+    h2 {
+        font-size: 2.5vw;
+    }
+    main section {
+        border-radius: 10px;
+    }
+    span {
+        font-size: 2vw;
+    }
+}
